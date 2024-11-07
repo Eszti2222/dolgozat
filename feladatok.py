@@ -50,7 +50,27 @@ def nevet_ker():
     print()
 
 def ko_papir_ollo():
+    tipp:str=input("Kő,papír,olló: ")
+    felhasznalo_tippje:str= tipp.lower()
+    gep_tippje:int=int(random.random()*1)+3
+    if(felhasznalo_tippje=="kő"):
+        felhasznalo_tippje=1
+    elif(felhasznalo_tippje=="papír"):
+        felhasznalo_tippje=2
+    elif(felhasznalo_tippje=="olló"):
+        felhasznalo_tippje=3
     
+    if(felhasznalo_tippje>gep_tippje):
+        print("Te nyertél")
+    elif(felhasznalo_tippje==gep_tippje):
+        print("Döntetlen!")
+    else:
+        print("A gép győzőtt")
+    
+
+    
+   
+
 
 
 
